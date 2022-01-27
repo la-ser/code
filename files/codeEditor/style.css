@@ -137,6 +137,10 @@ body {
     input[type=checkbox]:checked + .switch-btn {
         background-color: rgb(0, 255, 135);
     }
+/*hide frame*/
+        ::-webkit-scrollbar {
+            display: none;
+        }
 
 /* switch */
 .switch {
