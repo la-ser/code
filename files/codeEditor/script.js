@@ -49,3 +49,12 @@ document.getElementById("live").onclick = function() {
         });
     }
 }
+
+function downloadFile(fileNameToSaveAs){
+    var textToSave = document.getElementById("editor").innerText;
+    var hiddenElement = document.createElement('a');
+    hiddenElement.href = 'data:attachment/text,' + encodeURI(textToSave);
+    hiddenElement.target = '_blank';
+    hiddenElement.download = fileNameToSaveAs;
+    hiddenElement.click();
+}
