@@ -9,7 +9,6 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://la-ser.github.io/code/files/codeEditor/style.css">
 </head>
-
 <body>
     <div class="editor-menu">
         <button class="btn btn-dark">Dark Mode</button>
@@ -23,7 +22,7 @@
 
     <div class="container">
         <div class="left">
-            <div class="editor" contenteditable="">
+            <div id="editor" class="editor" contenteditable="">
                 <xmp><h1 style="color: red;">Example</h1>
 <h2 style="font-family: monospace;">1 8 7</h2></xmp>
             </div>
@@ -32,7 +31,13 @@
         <div class="right">
             <iframe src="" frameborder="0" height="100%" width="100%" class="iframe"></iframe>
         </div>
-    </div>
+        <div>
+            <a class="download-text">Change the name of the file</a>
+            <input class="download" type="text" id="setName" placeholder="fileName.html" value="fileName.html"><br>
+            <a class="download-text">Click to download your code</a>
+            <button class="download" onclick="downloadFile(setName.value)">Download</button>
+        </div>
+        </div>
 
     <script src="https://la-ser.github.io/code/files/codeEditor/script.js"></script>
 </body>
