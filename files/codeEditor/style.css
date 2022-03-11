@@ -52,6 +52,11 @@ body {
   border-radius: 3px;
   cursor: pointer;
   color: white;
+  opacity: 0.8;
+}
+
+.live:hover {
+    opacity: 1;
 }
 
 .live > * {
@@ -98,6 +103,7 @@ body {
   white-space: pre;
   right: 0;
   padding: 4px;
+  background-color: gray;
 }
 /* switch */
 .switch {
@@ -147,14 +153,20 @@ input[type="checkbox"]:checked + .switch-btn {
   justify-content: center;
   text-align: center;
   width: 100%;
-  background-color: gray;
+  background-color: rgb(105, 105, 105);
   color: white;
   border: none;
   border-radius: 10px;
   border-color: rgb(0, 255, 136);
   border-width: 1px;
   border-style: groove;
+  opacity: 0.8;
 }
+
+.download:hover {
+    opacity: 1;
+}
+
 .download-text {
   margin: 0;
   display: flex;
