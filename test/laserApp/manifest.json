@@ -5,7 +5,7 @@
     "background_color": "#47bfd1",
     "display": "fullscreen",
     "scope": "/",
-    "start_url": "/",
+    "start_url": "https://la-ser.github.io/code/test/laserApp/",
     "icons": [{
         "src": "icon.png",
         "sizes": "225x225",
