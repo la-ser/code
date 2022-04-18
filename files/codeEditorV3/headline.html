@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<style>
+    * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+    }
+
+    html {
+        font-size: 62.5%;
+        background-color: darkgray;
+    }
+
+    body {
+        user-select: none;
+    }
+
+    .editor-menu {
+        width: 100%;
+        background-color: gray;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 5px 0 px 10px;
+    }
+
+    .btn {
+        border: none;
+        outline: none;
+        cursor: pointer;
+        background-color: cadetblue;
+        padding: 8px 7px;
+        border-radius: 3px;
+        font-size: 1.6rem;
+        margin-right: 8px;
+        color: white;
+        min-width: 5rem;
+        transition: all 0.3s;
+    }
+
+    .btn:hover {
+        background-color: rgb(83, 177, 180);
+    }
+
+</style>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="https://la-ser.github.io/code/files/icons/edit.ico" type="image/x-icon">
+    <title>htmlEditor Headline - laser Inc.</title>
+</head>
+
+<body>
+    <div class="editor-menu">
+        <a target="_parent" href="https://la-ser.github.io/codeEditor"><button class="btn btn-dark">Go back</button></a>
+        <button disabled style="opacity: 0.3; background-color: red;" class="btn btn-light">BETA</button>
+    </div>
+
+</body>
+
+</html>
