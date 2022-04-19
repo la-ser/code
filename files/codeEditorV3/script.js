@@ -16,7 +16,10 @@ document.querySelector(".input-field-2 #js-code").addEventListener("keyup", run)
 };*/
 
 function downloadFile(fileNameToSaveAs){
-    var textToSave = output.contentDocument.body.innerHTML;
+    let htmlCode = document.querySelector(".input-field-1 #html-code").value;
+    let cssCode = "\n<style>\n" + document.querySelector(".input-field-2 #css-code").value + "\n</style>";
+    let jsCode = document.querySelector(".input-field-2 #js-code").value;
+    var textToSave = htmlCode + "\n" + cssCode + "\n\n<script>\n" + jsCode + "\n</script>";
     var hiddenElement = document.createElement('a');
     hiddenElement.href = 'data:attachment/text,' + encodeURI(textToSave);
     hiddenElement.target = '_blank';
