@@ -10,9 +10,10 @@ document.querySelector(".input-field-1 #html-code").addEventListener("keyup", ru
 document.querySelector(".input-field-2 #css-code").addEventListener("keyup", run);
 document.querySelector(".input-field-2 #js-code").addEventListener("keyup", run);
 
-window.onbeforeunload = function () {
+// in arbeit (nervt)
+/*window.onbeforeunload = function () {
     return "Data will be lost if you leave the page, are you sure?";
-};
+};*/
 
 function downloadFile(fileNameToSaveAs){
     let htmlCode = document.querySelector(".input-field-1 #html-code").value;
