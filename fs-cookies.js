@@ -48,7 +48,7 @@ function deleteScore() {
   }
 }
 
-function saveClicks() {
+function saveScore() {
   score = Math.floor(score);
   //   alert("Score saved: " + score);
 
