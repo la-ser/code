@@ -1,8 +1,10 @@
 /* COOKIES */
 let scoreSAVED = getScore("scoreSAVED");
+let highscoreSAVED = getScore("highscoreSAVED");
 
 function loadScore() {
   /* load stats */
+  highscore = highscoreSAVED;
   score = scoreSAVED;
 }
 
@@ -56,6 +58,7 @@ function saveScore() {
     //smaller than the highscore
     return;
   } else {
-    setScore("scoreSAVED", score);
+    setScore("highscoreSAVED", score);
   }
+  setScore("scoreSAVED", score);
 }
